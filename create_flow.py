@@ -94,7 +94,7 @@ def handle_dimensioni(call):
 
         kb = InlineKeyboardMarkup()
         kb.add(InlineKeyboardButton("💥 CREA 💥", callback_data="crea_finale"))
-        bot.send_message(call.message.chat.id, report, reply_markup=kb)
+        bot.send_message(call.message.chat.id, report, parse_mode="Markdown", reply_markup=kb)
         bot.delete_message(call.message.chat.id, call.message.message_id)
         return
     dim = call.data.split("_", 1)[1]
@@ -137,7 +137,7 @@ def handle_crea(call):
             f"• *Dimensione*: ||{dimensione}||\n\n"
             "Non perdere tempo, installa l'app PaddingBro+ e digita /app per scoprire il next level! 💥🤙"
         )
-    bot.send_message(call.message.chat.id, msg)
+    bot.send_message(call.message.chat.id, msg, parse_mode="Markdown")
     bot.delete_message(call.message.chat.id, call.message.message_id)
     user_states.pop(call.from_user.id, None)
 
