@@ -52,7 +52,7 @@ def send_help(message):
         "• /create - Avvia la creazione guidata di un padding casuale _(con scelta di tipo e dimensione)_ 🤖\n"
         "• /app - Scopri l'app ufficiale con funzionalità extra e l'esclusiva *modalità SnappThicc* 💾\n"
         "• /help - Stai guardando proprio questo! Ti mostra tutti i comandi disponibili 🔍\n"
-        "• /about - Scopri di più su PaddingBro\\+ e il suo creatore 🦸🏻‍♂️\n\n"
+        "• /about - Scopri di più su PaddingBro+ e il suo creatore 🦸🏻‍♂️\n\n"
         "✨ Altre funzioni stanno arrivando. Resta connesso e continua a creare padding leggendari.\n\n"
         "_PaddingBro+ ti guarda. 👀_", parse_mode="Markdown")
 
@@ -60,16 +60,25 @@ def send_help(message):
 def send_about(message):
     bot.reply_to(
         message,
-        "*PaddingBro\\+* è stato creato con 💚 da [@Mt12509](https://t.me/Mt12509)\\!\n\n"
-    "🚀 L'app ufficiale \\(con funzioni esclusive tipo *SnappThicc*\\) e il codice del bot sono open source su GitHub\\:\n"
-    "[github\\.com/Mt12509/Padding\\_Bro\\_Plus](https://github.com/Mt12509/)\n\n"
-    "💡 Hai un'idea per migliorare il bot\\? Vuoi suggerire funzioni, modifiche o nuove assurdità\\?\n"
-    "Scrivimi su Telegram o apri una issue su GitHub\\!\n\n"
-    "☕ Ti piace il progetto e vuoi supportarlo\\?\n"
-    "Puoi lasciare una birretta o un caffè virtuale qui\\:\n"
+        "*PaddingBro+* è stato creato con 💚 da [@Mt12509](https://t.me/Mt12509)\\!\n\n"
+    "🚀 L'app ufficiale _(con funzioni esclusive tipo *SnappThicc*)_ e il codice del bot sono open source su GitHub:\n"
+    "[github.com/Mt12509/Padding_Bro_Plus](https://github.com/Mt12509/)\n\n"
+    "💡 Hai un'idea per migliorare il bot? Vuoi suggerire funzioni, modifiche o nuove idee?\n"
+    "Scrivimi su Telegram o apri una issue su GitHub!\n\n"
+    "☕ Ti piace il progetto e vuoi supportarlo?\n"
+    "Puoi lasciare una birretta o un caffè virtuale qui:\n"
     "[Coming Soon!](https://google.com)\n\n"
-    "_Ogni tip, stella o consiglio è super apprezzato\\!_\n\n"
-    "*Grazie per usare PaddingBro\\+\\. Il padding non sarà mai più lo stesso\\.* 💥",
+    "_Ogni tip, stella o consiglio è super apprezzato!_\n\n"
+    "*Grazie per usare PaddingBro+.\n Il padding non sarà mai più lo stesso.* 💥",
+        parse_mode="Markdown", disable_web_page_preview=True
+    )
+
+
+@bot.message_handler(func=lambda message: message.text and message.text.startswith("/"))
+def unknown_command(message):
+    bot.reply_to(
+        message,
+        "❌ Comando non riconosciuto.\nUsa /help per vedere la lista dei comandi disponibili.",
         parse_mode="Markdown"
     )
 if __name__ == "__main__":

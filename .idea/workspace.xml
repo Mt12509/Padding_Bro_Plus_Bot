@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4f19cc7-d6e8-4fbf-b3a2-9fb064addc96" name="Changes" comment="Enhance help message content in bot interaction for improved user guidance in app.py">
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-    </list>
+    <list default="true" id="c4f19cc7-d6e8-4fbf-b3a2-9fb064addc96" name="Changes" comment="Add about command to provide information about PaddingBro+ and support options" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,23 +90,7 @@
       <updated>1749205126919</updated>
       <workItem from="1749205129634" duration="544000" />
       <workItem from="1749205784954" duration="841000" />
-      <workItem from="1749461909694" duration="15299000" />
-    </task>
-    <task id="LOCAL-00001" summary="Add initial project files and configuration">
-      <option name="closed" value="true" />
-      <created>1749206870474</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1749206870474</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Add bot handler and configuration files for vercel deploy">
-      <option name="closed" value="true" />
-      <created>1749462660095</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1749462660095</updated>
+      <workItem from="1749461909694" duration="15821000" />
     </task>
     <task id="LOCAL-00003" summary="Add bot handler and configuration files for vercel deploy">
       <option name="closed" value="true" />
@@ -486,14 +468,29 @@
       <option name="project" value="LOCAL" />
       <updated>1749479751505</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Enhance help message content in bot interaction for improved user guidance in app.py">
+      <option name="closed" value="true" />
+      <created>1749479840111</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1749479840113</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Add about command to provide information about PaddingBro+ and support options">
+      <option name="closed" value="true" />
+      <created>1749480288596</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1749480288596</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fix bot response handling to check for message presence" />
     <MESSAGE value="Add initial Flask app and Telegram bot integration" />
     <MESSAGE value="Update bot token environment variable in Flask app" />
     <MESSAGE value="Add create flow functionality for Telegram bot" />
@@ -518,6 +515,7 @@
     <MESSAGE value="Enhance bot interaction with improved welcome and help messages in app.py" />
     <MESSAGE value="Remove help message content from bot interaction in app.py" />
     <MESSAGE value="Enhance help message content in bot interaction for improved user guidance in app.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Enhance help message content in bot interaction for improved user guidance in app.py" />
+    <MESSAGE value="Add about command to provide information about PaddingBro+ and support options" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add about command to provide information about PaddingBro+ and support options" />
   </component>
 </project>
