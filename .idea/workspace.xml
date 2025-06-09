@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4f19cc7-d6e8-4fbf-b3a2-9fb064addc96" name="Changes" comment="Enhance bot interaction with welcoming message and emoji support in create_flow.py" />
+    <list default="true" id="c4f19cc7-d6e8-4fbf-b3a2-9fb064addc96" name="Changes" comment="Enhance bot interaction with improved welcoming message formatting and emoji support in create_flow.py">
+      <change beforePath="$PROJECT_DIR$/create_flow.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_flow.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +92,7 @@
       <updated>1749205126919</updated>
       <workItem from="1749205129634" duration="544000" />
       <workItem from="1749205784954" duration="841000" />
-      <workItem from="1749461909694" duration="10486000" />
+      <workItem from="1749461909694" duration="10827000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project files and configuration">
       <option name="closed" value="true" />
@@ -308,7 +310,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749474775001</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Enhance bot interaction with improved welcoming message formatting and emoji support in create_flow.py">
+      <option name="closed" value="true" />
+      <created>1749474927966</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1749474927966</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,6 +341,7 @@
     <MESSAGE value="Refactor bot command handling and update user state management in create_flow.py" />
     <MESSAGE value="Enhance bot interaction with improved messaging and emoji support in create_flow.py and app.py" />
     <MESSAGE value="Enhance bot interaction with welcoming message and emoji support in create_flow.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Enhance bot interaction with welcoming message and emoji support in create_flow.py" />
+    <MESSAGE value="Enhance bot interaction with improved welcoming message formatting and emoji support in create_flow.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enhance bot interaction with improved welcoming message formatting and emoji support in create_flow.py" />
   </component>
 </project>

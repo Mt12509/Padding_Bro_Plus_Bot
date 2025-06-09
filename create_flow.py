@@ -28,14 +28,13 @@ def send_tipi_selection(chat_id, selected):
     kb.add(InlineKeyboardButton("Conferma", callback_data="tipi_done"))
     bot.send_message(
     chat_id,
-    "🎉 *Benvenuto nella creazione del tuo padding con PaddingBro+!* 🧸\n\n"
-    "Adesso si gioca sul serio 😎\n\n"
+    "*Benvenuto nella creazione del tuo padding con PaddingBro+!* 🧸\n\n"
     "Tra poco ti invierò una serie di messaggi con dei menu: scegli gli interessi che più ti rappresentano (o che ti ispirano oggi 🌀).\n"
-    "Una volta finito, il bot mescolerà tutto e creerà per te un *padding completamente casuale*! ✨\n\n"
+    "Una volta finito, mescolerò tutto e creerò per te un *padding completamente casuale*! ✨\n\n"
     "Pronto a vedere cosa ne viene fuori? Let's go! 🚀",
     parse_mode="Markdown"
 )
-    bot.send_message(chat_id, "❇️ Seleziona i tipi di padding che ti interessano:\n (Scegli Conferma per continuare)", reply_markup=kb)
+    bot.send_message(chat_id, "💥 Scegli i tipi di padding che ti interessano di più:\\n\\(Quando hai finito, clicca su *Conferma* e lascia che l'algoritmo faccia le sue magie\\ 🪄\\)", reply_markup=kb)
 
 def send_dimensioni_selection(chat_id, selected):
     kb = InlineKeyboardMarkup()
