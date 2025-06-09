@@ -1,4 +1,5 @@
-from dotenv import load_dotenvfrom bot_instance import bot
+from dotenv import load_dotenv
+from bot_instance import bot
 import create_flow
 # ... resto del codice ...
 
