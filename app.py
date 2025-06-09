@@ -60,7 +60,7 @@ def send_help(message):
 def send_about(message):
     bot.reply_to(
         message,
-        "*PaddingBro+* è stato creato con 💚 da [@Mt12509](https://t.me/Mt12509)\\!\n\n"
+        "*PaddingBro+* è stato creato con 💚 da [@Mt12509](https://t.me/Mt12509)!\n\n"
     "🚀 L'app ufficiale _(con funzioni esclusive tipo *SnappThicc*)_ e il codice del bot sono open source su GitHub:\n"
     "[github.com/Mt12509/Padding_Bro_Plus](https://github.com/Mt12509/)\n\n"
     "💡 Hai un'idea per migliorare il bot? Vuoi suggerire funzioni, modifiche o nuove idee?\n"
@@ -78,7 +78,9 @@ def send_about(message):
 def unknown_command(message):
     bot.reply_to(
         message,
-        "❌ Comando non riconosciuto.\nUsa /help per vedere la lista dei comandi disponibili.",
+        "❌ *Comando non riconosciuto, bro.* 😅\n"
+    "Forse hai scritto male o hai scoperto un padding segreto! 🕵️‍♂️\n\n"
+    "Digita /help per vedere tutti i comandi disponibili e tornare a dominare il padding. 💪",
         parse_mode="Markdown"
     )
 if __name__ == "__main__":
