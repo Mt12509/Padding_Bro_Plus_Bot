@@ -1,2 +1,5 @@
 Django==4.1.3
 python-telegram-bot
+os
+json
+logging

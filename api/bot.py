@@ -1,4 +1,5 @@
 import os
+import json
 import logging
 from telegram import ForceReply, Update
 from telegram.ext import Application, CommandHandler, ContextTypes, MessageHandler, filters
@@ -32,9 +33,13 @@ application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, echo))
 
 # Handler per Vercel
 async def handler(request):
-    if request.method != "POST":
-        return {"statusCode": 405, "body": "Method Not Allowed"}
-    body = await request.json()
-    update = Update.de_json(body, application.bot)
-    await application.process_update(update)
-    return {"statusCode": 200, "body": "ok"}
+    async def handler(request):
+        if request.method != "POST":
+            return {"statusCode": 405, "body": "Method Not Allowed"}
+
+        body = await request.json()
+        logger.info("Richiesta ricevuta: %s", json.dumps(body, indent=2))  # Log della richiesta
+
+        update = Update.de_json(body, application.bot)
+        await application.process_update(update)
+        return {"statusCode": 200, "body": "ok"}
