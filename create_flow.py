@@ -84,13 +84,13 @@ def handle_dimensioni(call):
     if call.data == "dim_done":
         state["step"] = "done"
         report = (
-            "🧾 Ecco il riepilogo della tua selezione, bro:\n\n"
-            "👉 Tipi di padding scelti:\n"
-            + '\n'.join(f"• {tipo}" for tipo in state['tipi']) +
-            "\n\n👉 Dimensioni selezionate:\n"
-            + '\n'.join(f"• {dim}" for dim in state['dimensioni']) +
-            "\n\nSe ti piace come suona, premi \\*Conferma\\* e lasciami fare la magia! ✨"
-        )
+           "🧾 Ecco il riepilogo della tua selezione, bro:\n\n"
+           "👉 *Tipi di padding scelti:*\n"
+           + '\n'.join(f"• {tipo}" for tipo in state['tipi']) +
+           "\n\n👉 *Dimensioni selezionate:*\n"
+           + '\n'.join(f"• {dim}" for dim in state['dimensioni']) +
+           "\n\nSe ti piace come suona, premi *Conferma* e lasciami fare la magia! ✨"
+       )
 
         kb = InlineKeyboardMarkup()
         kb.add(InlineKeyboardButton("💥 CREA 💥", callback_data="crea_finale"))
@@ -124,20 +124,19 @@ def handle_crea(call):
             dettaglio = random.choice(DETTAGLI_CAZZO)
     if dettaglio:
         msg = (
-            f"🧾 Ecco il tuo risultato random, bro:\n"
-            f"• Tipo: {tipo}\n"
-            f"• Dimensione: {dimensione}\n"
-            f"• Dettaglio: {dettaglio}\n\n"
+            "🧾 Ecco il tuo padding random, bro:\n\n"
+            f"• *Tipo*: ||{tipo}||\n"
+            f"• *Dimensione*: ||{dimensione}||\n"
+            f"• *Dettaglio*: ||{dettaglio}||\n\n"
             "Se vuoi spaccare ancora di più, installa l'app PaddingBro+ e fai /app per tutte le dritte! 🚀🔥"
         )
     else:
         msg = (
-            f"🧾 Ecco il tuo risultato random, bro:\n"
-            f"• Tipo: {tipo}\n"
-            f"• Dimensione: {dimensione}\n\n"
+            "🧾 Ecco il tuo padding random, bro:\n\n"
+            f"• *Tipo*: ||{tipo}||\n"
+            f"• *Dimensione*: ||{dimensione}||\n\n"
             "Non perdere tempo, installa l'app PaddingBro+ e digita /app per scoprire il next level! 💥🤙"
         )
-
     bot.send_message(call.message.chat.id, msg)
     bot.delete_message(call.message.chat.id, call.message.message_id)
     user_states.pop(call.from_user.id, None)
