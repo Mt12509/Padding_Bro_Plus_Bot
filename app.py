@@ -38,6 +38,14 @@ def send_welcome(message):
         "Benvenuto! Questo è un bot demo. Usa /help o /start per vedere questo messaggio."
     )
 
+@bot.message_handler(commands=["create"])
+def start_create(message):
+    print("Handler /create command chiamato")
+    bot.send_message(
+        message.chat.id,
+        "Inizia il processo di creazione. Segui le istruzioni."
+    )
+
 if __name__ == "__main__":
     bot.remove_webhook()
     bot.set_webhook(url="https://padding-bro-plus-bot.vercel.app/webhook")
