@@ -34,7 +34,13 @@ def send_tipi_selection(chat_id, selected):
     "Pronto a vedere cosa ne viene fuori? Let's go! 🚀",
     parse_mode="Markdown"
 )
-    bot.send_message(chat_id, "💥 Scegli i tipi di padding che ti interessano di più:\\n\\(Quando hai finito, clicca su *Conferma* e lascia che l'algoritmo faccia le sue magie\\ 🪄\\)", reply_markup=kb)
+    bot.send_message(
+        chat_id,
+        "💥 *Scegli i tipi di padding che ti interessano di più:*\n"
+        "_Quando hai finito, clicca su_ *Conferma* _e lascia che l'algoritmo faccia le sue magie 🪄_",
+        parse_mode="Markdown",
+        reply_markup=kb
+    )
 
 def send_dimensioni_selection(chat_id, selected):
     kb = InlineKeyboardMarkup()
