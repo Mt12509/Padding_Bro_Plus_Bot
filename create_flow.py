@@ -133,11 +133,11 @@ def handle_crea(call):
     else:
         msg = (
             "🧾 Ecco il tuo padding random, bro:\n\n"
-            f"• *Tipo*: {tipo}||\n"
+            f"• *Tipo*: ||{tipo}||\n"
             f"• *Dimensione*: {dimensione}||\n\n"
             "Non perdere tempo, installa l'app PaddingBro+ e digita /app per scoprire il next level! 💥🤙"
         )
-    bot.send_message(call.message.chat.id, msg, parse_mode="Markdown")
+    bot.send_message(call.message.chat.id, msg, parse_mode="MarkdownV2")
     bot.delete_message(call.message.chat.id, call.message.message_id)
     user_states.pop(call.from_user.id, None)
 
