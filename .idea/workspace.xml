@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4f19cc7-d6e8-4fbf-b3a2-9fb064addc96" name="Changes" comment="Enhance bot interaction with improved welcome and help messages in app.py">
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-    </list>
+    <list default="true" id="c4f19cc7-d6e8-4fbf-b3a2-9fb064addc96" name="Changes" comment="Remove help message content from bot interaction in app.py" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +90,7 @@
       <updated>1749205126919</updated>
       <workItem from="1749205129634" duration="544000" />
       <workItem from="1749205784954" duration="841000" />
-      <workItem from="1749461909694" duration="14320000" />
+      <workItem from="1749461909694" duration="14778000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project files and configuration">
       <option name="closed" value="true" />
@@ -438,14 +436,37 @@
       <option name="project" value="LOCAL" />
       <updated>1749478738740</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Enhance bot interaction with improved welcome message formatting in app.py">
+      <option name="closed" value="true" />
+      <created>1749478850512</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1749478850512</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Enhance bot interaction with improved welcome and help messages in app.py">
+      <option name="closed" value="true" />
+      <created>1749479003512</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1749479003512</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Remove help message content from bot interaction in app.py">
+      <option name="closed" value="true" />
+      <created>1749479213045</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1749479213045</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;vercel.json" />
     <MESSAGE value="Refactor bot to use environment variable for token and add Vercel handler" />
     <MESSAGE value="Fix bot response handling to check for message presence" />
     <MESSAGE value="Add initial Flask app and Telegram bot integration" />
@@ -470,6 +491,7 @@
     <MESSAGE value="Enhance bot interaction with new app info command and improved message formatting in create_flow.py" />
     <MESSAGE value="Enhance bot interaction with improved message formatting in app info command in create_flow.py" />
     <MESSAGE value="Enhance bot interaction with improved welcome and help messages in app.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Enhance bot interaction with improved welcome and help messages in app.py" />
+    <MESSAGE value="Remove help message content from bot interaction in app.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove help message content from bot interaction in app.py" />
   </component>
 </project>

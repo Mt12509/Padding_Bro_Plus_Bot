@@ -46,7 +46,7 @@ def send_welcome(message):
 @bot.message_handler(commands=["help"])
 def send_help(message):
     bot.reply_to(message,
-    "", parse_mode="Markdown")
+    "test", parse_mode="Markdown")
 
 if __name__ == "__main__":
     bot.remove_webhook()
