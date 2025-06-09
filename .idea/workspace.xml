@@ -79,7 +79,7 @@
       <updated>1749205126919</updated>
       <workItem from="1749205129634" duration="544000" />
       <workItem from="1749205784954" duration="841000" />
-      <workItem from="1749461909694" duration="6814000" />
+      <workItem from="1749461909694" duration="7191000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project files and configuration">
       <option name="closed" value="true" />
@@ -209,7 +209,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749468356569</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Fix typo in bot instance import and update workspace configuration">
+      <option name="closed" value="true" />
+      <created>1749471133020</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1749471133020</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Fix typo in bot instance import and update workspace configuration">
+      <option name="closed" value="true" />
+      <created>1749471376837</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1749471376837</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

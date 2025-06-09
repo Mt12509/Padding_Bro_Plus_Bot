@@ -79,3 +79,15 @@ def handle_dimensioni(call):
             state["dimensioni"].append(dim)
     send_dimensioni_selection(call.message.chat.id, state["dimensioni"])
     bot.delete_message(call.message.chat.id, call.message.message_id)
+
+@bot.message_handler(commands=["debug"])
+def debug(message):
+    user_id = message.from_user.id
+    state = user_states.get(user_id, {})
+    bot.send_message(
+        message.chat.id,
+        f"Stato utente {user_id}:\n"
+        f"Tipi: {state.get('tipi', [])}\n"
+        f"Dimensioni: {state.get('dimensioni', [])}\n"
+        f"Step: {state.get('step', 'unknown')}"
+    )
