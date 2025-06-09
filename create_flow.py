@@ -26,6 +26,16 @@ def send_tipi_selection(chat_id, selected):
         text = f"✅ {t}" if t in selected else f"❌ {t}"
         kb.add(InlineKeyboardButton(text, callback_data=f"tipi_{t}"))
     kb.add(InlineKeyboardButton("Conferma", callback_data="tipi_done"))
+    bot.send_message(chat_id, """
+🎉 *Benvenuto nella creazione del tuo padding con PaddingBro+!* 🧸
+
+Adesso si gioca sul serio 😎
+
+Tra poco ti invierò una serie di messaggi con dei menu: scegli gli interessi che più ti rappresentano (o che ti ispirano oggi 🌀).  
+Una volta finito, il bot mescolerà tutto e creerà per te un *padding completamente casuale*! ✨
+
+Pronto a vedere cosa ne viene fuori? Let's go! 🚀
+""")
     bot.send_message(chat_id, "❇️ Seleziona i tipi di padding che ti interessano:\n (Scegli Conferma per continuare)", reply_markup=kb)
 
 def send_dimensioni_selection(chat_id, selected):
