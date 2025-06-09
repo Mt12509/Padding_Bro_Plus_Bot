@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4f19cc7-d6e8-4fbf-b3a2-9fb064addc96" name="Changes" comment="Add about command to provide information about PaddingBro+ and support options" />
+    <list default="true" id="c4f19cc7-d6e8-4fbf-b3a2-9fb064addc96" name="Changes" comment="Improve bot responses for unrecognized commands and update about message formatting" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,15 +90,7 @@
       <updated>1749205126919</updated>
       <workItem from="1749205129634" duration="544000" />
       <workItem from="1749205784954" duration="841000" />
-      <workItem from="1749461909694" duration="16132000" />
-    </task>
-    <task id="LOCAL-00004" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;vercel.json">
-      <option name="closed" value="true" />
-      <created>1749463323353</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1749463323353</updated>
+      <workItem from="1749461909694" duration="16460000" />
     </task>
     <task id="LOCAL-00005" summary="Refactor bot to use environment variable for token and add Vercel handler">
       <option name="closed" value="true" />
@@ -484,14 +476,21 @@
       <option name="project" value="LOCAL" />
       <updated>1749480518086</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Improve bot responses for unrecognized commands and update about message formatting">
+      <option name="closed" value="true" />
+      <created>1749480808642</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1749480808642</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add initial Flask app and Telegram bot integration" />
     <MESSAGE value="Update bot token environment variable in Flask app" />
     <MESSAGE value="Add create flow functionality for Telegram bot" />
     <MESSAGE value="Fix import statement formatting and update workspace configuration for create flow functionality" />
@@ -516,6 +515,7 @@
     <MESSAGE value="Remove help message content from bot interaction in app.py" />
     <MESSAGE value="Enhance help message content in bot interaction for improved user guidance in app.py" />
     <MESSAGE value="Add about command to provide information about PaddingBro+ and support options" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add about command to provide information about PaddingBro+ and support options" />
+    <MESSAGE value="Improve bot responses for unrecognized commands and update about message formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improve bot responses for unrecognized commands and update about message formatting" />
   </component>
 </project>

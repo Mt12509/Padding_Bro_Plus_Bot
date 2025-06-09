@@ -115,7 +115,7 @@ def handle_crea(call):
     tipo = random.choice(state["tipi"])
     dimensione = random.choice(state["dimensioni"])
     dettaglio = None
-    if dimensione == "Dettaglio Specifico":
+    if dimensione == "Dettaglio Specifico 🔁":
         if tipo == "Grasso":
             dettaglio = random.choice(DETTAGLI_GRASSO)
         elif tipo == "Muscoli":
