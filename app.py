@@ -46,7 +46,7 @@ def send_welcome(message):
 @bot.message_handler(commands=["help"])
 def send_help(message):
     bot.reply_to(message,
-    "🛠 *Comandi disponibili su PaddingBro+* \\n"
+    "🛠 *Comandi disponibili su PaddingBro+* \n"
     "Hai il potere del padding tra le mani\\. Ecco come usarlo al meglio 👇\n\n"
     
     "• /start - Mostra il messaggio di benvenuto e panoramica del bot ⏯️\n"
