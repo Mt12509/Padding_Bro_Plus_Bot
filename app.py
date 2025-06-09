@@ -56,6 +56,22 @@ def send_help(message):
         "✨ Altre funzioni stanno arrivando. Resta connesso e continua a creare padding leggendari.\n\n"
         "_PaddingBro+ ti guarda. 👀_", parse_mode="Markdown")
 
+@bot.message_handler(commands=["about"])
+def send_about(message):
+    bot.reply_to(
+        message,
+        "*PaddingBro\\+* è stato creato con 💚 da [@Mt12509](https://t.me/Mt12509)\\!\n\n"
+    "🚀 L'app ufficiale \\(con funzioni esclusive tipo *SnappThicc*\\) e il codice del bot sono open source su GitHub\\:\n"
+    "[github\\.com/Mt12509/Padding\\_Bro\\_Plus](https://github.com/Mt12509/)\n\n"
+    "💡 Hai un'idea per migliorare il bot\\? Vuoi suggerire funzioni, modifiche o nuove assurdità\\?\n"
+    "Scrivimi su Telegram o apri una issue su GitHub\\!\n\n"
+    "☕ Ti piace il progetto e vuoi supportarlo\\?\n"
+    "Puoi lasciare una birretta o un caffè virtuale qui\\:\n"
+    "[Coming Soon!](https://google.com)\n\n"
+    "_Ogni tip, stella o consiglio è super apprezzato\\!_\n\n"
+    "*Grazie per usare PaddingBro\\+\\. Il padding non sarà mai più lo stesso\\.* 💥",
+        parse_mode="Markdown"
+    )
 if __name__ == "__main__":
     bot.remove_webhook()
     bot.set_webhook(url="https://padding-bro-plus-bot.vercel.app/webhook")
