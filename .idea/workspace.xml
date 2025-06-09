@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4f19cc7-d6e8-4fbf-b3a2-9fb064addc96" name="Changes" comment="Add initial project files and configuration">
-      <change beforePath="$PROJECT_DIR$/.idea/PaddingBroPlus.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PaddingBroPlus.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c4f19cc7-d6e8-4fbf-b3a2-9fb064addc96" name="Changes" comment="Add bot handler and configuration files for vercel deploy" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,7 +74,7 @@
       <updated>1749205126919</updated>
       <workItem from="1749205129634" duration="544000" />
       <workItem from="1749205784954" duration="841000" />
-      <workItem from="1749461909694" duration="446000" />
+      <workItem from="1749461909694" duration="848000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project files and configuration">
       <option name="closed" value="true" />
@@ -87,7 +84,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749206870474</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add bot handler and configuration files for vercel deploy">
+      <option name="closed" value="true" />
+      <created>1749462660095</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1749462660095</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add bot handler and configuration files for vercel deploy">
+      <option name="closed" value="true" />
+      <created>1749462743725</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1749462743725</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +108,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add initial project files and configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add initial project files and configuration" />
+    <MESSAGE value="Add bot handler and configuration files for vercel deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add bot handler and configuration files for vercel deploy" />
   </component>
 </project>
