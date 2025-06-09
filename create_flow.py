@@ -10,6 +10,7 @@ DIMENSIONI = ["Small", "Medium", "Large", "Extra Large"]
 
 @bot.message_handler(commands=["create"])
 def start_create(message):
+    print("Handler /create command chiamato")
     user_states[message.from_user.id] = {
         "tipi": TIPI.copy(),
         "dimensioni": DIMENSIONI.copy(),
