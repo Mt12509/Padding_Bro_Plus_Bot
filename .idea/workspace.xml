@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4f19cc7-d6e8-4fbf-b3a2-9fb064addc96" name="Changes" comment="Fix import order in app.py for consistency">
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+    <list default="true" id="c4f19cc7-d6e8-4fbf-b3a2-9fb064addc96" name="Changes" comment="Refactor bot command handling and update user state management in create_flow.py">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/create_flow.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_flow.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +82,7 @@
       <updated>1749205126919</updated>
       <workItem from="1749205129634" duration="544000" />
       <workItem from="1749205784954" duration="841000" />
-      <workItem from="1749461909694" duration="8009000" />
+      <workItem from="1749461909694" duration="9520000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project files and configuration">
       <option name="closed" value="true" />
@@ -252,7 +252,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749472034802</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Refactor bot command handling and update user state management in create_flow.py">
+      <option name="closed" value="true" />
+      <created>1749472741465</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1749472741465</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,6 +280,7 @@
     <MESSAGE value="Fix typo in bot instance import and rename file for consistency" />
     <MESSAGE value="Fix typo in bot instance import and update workspace configuration" />
     <MESSAGE value="Fix import order in app.py for consistency" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix import order in app.py for consistency" />
+    <MESSAGE value="Refactor bot command handling and update user state management in create_flow.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor bot command handling and update user state management in create_flow.py" />
   </component>
 </project>

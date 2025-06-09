@@ -4,11 +4,11 @@ from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 user_states = {}
 
-TIPI = ["Grasso", "Muscoli", "Cazzo"]
-DIMENSIONI = ["XL Naturale", "XL Innaturale", "Estremo Innaturale", "Dettaglio Specifico"]
-DETTAGLI_GRASSO = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
-DETTAGLI_MUSCOLI = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
-DETTAGLI_CAZZO = [",", ".", ":", ";", "!", "?", "(", ")", "[", "]", "{", "}", "<", ">", "/", "\\", "|", "-", "_", "+", "*", "&", "^", "%", "$", "#", "@"]
+TIPI = ["Grasso 🫃🏻", "Muscoli 💪🏻", "Cazzo 🍆"]
+DIMENSIONI = ["XL Naturale ▶️", "XL Innaturale ⏩", "Estremo Innaturale ⏭️", "Dettaglio Specifico 🔁"]
+DETTAGLI_GRASSO = ["Pancia", "Fatpad", "Gambe", "Braccia", "Schiena", "Fianchi", "Torso Superiore"]
+DETTAGLI_MUSCOLI = ["Petto", "Addome", "Quadricipiti", "Polpacci", "V-Shape", "Spalle", "Braccia", "Schiena"]
+DETTAGLI_CAZZO = ["Palle", "Lunghezza", "Cazzo", "Fusto", "Cappella", "Larghezza", "Pene Curvo", "Sporgente"]
 
 @bot.message_handler(commands=["create"])
 def start_create(message):
@@ -26,15 +26,15 @@ def send_tipi_selection(chat_id, selected):
         text = f"✅ {t}" if t in selected else f"❌ {t}"
         kb.add(InlineKeyboardButton(text, callback_data=f"tipi_{t}"))
     kb.add(InlineKeyboardButton("Conferma", callback_data="tipi_done"))
-    bot.send_message(chat_id, "Seleziona i tipi (puoi deselezionarne massimo 2):", reply_markup=kb)
+    bot.send_message(chat_id, "❇️ Seleziona i tipi di padding che ti interessano:\n (Scegli Conferma per continuare)", reply_markup=kb)
 
 def send_dimensioni_selection(chat_id, selected):
     kb = InlineKeyboardMarkup()
     for d in DIMENSIONI:
         text = f"✅ {d}" if d in selected else f"❌ {d}"
         kb.add(InlineKeyboardButton(text, callback_data=f"dim_{d}"))
-    kb.add(InlineKeyboardButton("Conferma", callback_data="dim_done"))
-    bot.send_message(chat_id, "Seleziona le dimensioni (puoi deselezionarne massimo 3):", reply_markup=kb)
+    kb.add(InlineKeyboardButton("✔️ Conferma ✔️", callback_data="dim_done"))
+    bot.send_message(chat_id, "Seleziona le dimensioni del padding che ti interessano:\n (Scegli Conferma per continuare)", reply_markup=kb)
 
 @bot.callback_query_handler(func=lambda call: call.data.startswith("tipi_") or call.data == "tipi_done")
 def handle_tipi(call):
@@ -64,12 +64,12 @@ def handle_dimensioni(call):
     if call.data == "dim_done":
         state["step"] = "done"
         report = (
-            f"Hai selezionato:\n"
+            f"🧾 Resoconto selezione:\n"
             f"Tipi: {', '.join(state['tipi'])}\n"
             f"Dimensioni: {', '.join(state['dimensioni'])}"
         )
         kb = InlineKeyboardMarkup()
-        kb.add(InlineKeyboardButton("CREA", callback_data="crea_finale"))
+        kb.add(InlineKeyboardButton("💥 CREA 💥", callback_data="crea_finale"))
         bot.send_message(call.message.chat.id, report, reply_markup=kb)
         bot.delete_message(call.message.chat.id, call.message.message_id)
         return
@@ -99,9 +99,9 @@ def handle_crea(call):
         elif tipo == "Cazzo":
             dettaglio = random.choice(DETTAGLI_CAZZO)
     if dettaglio:
-        msg = f"Risultato casuale:\nTipo: {tipo}\nDimensione: {dimensione}\nDettaglio: {dettaglio}"
+        msg = f"🧾 Risultato casuale:\nTipo: {tipo}\nDimensione: {dimensione}\nDettaglio: {dettaglio}"
     else:
-        msg = f"Risultato casuale:\nTipo: {tipo}\nDimensione: {dimensione}"
+        msg = f"🧾 Risultato casuale:\nTipo: {tipo}\nDimensione: {dimensione}"
     bot.send_message(call.message.chat.id, msg)
     bot.delete_message(call.message.chat.id, call.message.message_id)
     user_states.pop(call.from_user.id, None)

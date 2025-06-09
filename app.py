@@ -35,7 +35,7 @@ def webhook():
 def send_welcome(message):
     bot.reply_to(
         message,
-        "Benvenuto! Questo è un bot demo. Usa /help o /start per vedere questo messaggio."
+        "Benvenuto! Questo è un bot demo. Usa /help o /start per vedere questo messaggio.\n "
     )
 
 if __name__ == "__main__":
