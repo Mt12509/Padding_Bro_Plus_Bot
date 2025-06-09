@@ -48,7 +48,13 @@ def send_dimensioni_selection(chat_id, selected):
         text = f"✅ {d}" if d in selected else f"❌ {d}"
         kb.add(InlineKeyboardButton(text, callback_data=f"dim_{d}"))
     kb.add(InlineKeyboardButton("✔️ Conferma ✔️", callback_data="dim_done"))
-    bot.send_message(chat_id, "Seleziona le dimensioni del padding che ti interessano:\n (Scegli Conferma per continuare)", reply_markup=kb)
+    bot.send_message(
+            chat_id,
+            "📏 *Dimmi le dimensioni del padding che ti interessano:*\n"
+            "_Poi schiaccia_ *Conferma* _e vediamo che combo esce fuori 🎲_",
+            parse_mode="Markdown",
+            reply_markup=kb
+        )
 
 @bot.callback_query_handler(func=lambda call: call.data.startswith("tipi_") or call.data == "tipi_done")
 def handle_tipi(call):
@@ -78,10 +84,14 @@ def handle_dimensioni(call):
     if call.data == "dim_done":
         state["step"] = "done"
         report = (
-            f"🧾 Resoconto selezione:\n"
-            f"Tipi: {', '.join(state['tipi'])}\n"
-            f"Dimensioni: {', '.join(state['dimensioni'])}"
+            "🧾 Ecco il riepilogo della tua selezione, bro:\n\n"
+            "👉 Tipi di padding scelti:\n"
+            + '\n'.join(f"• {tipo}" for tipo in state['tipi']) +
+            "\n\n👉 Dimensioni selezionate:\n"
+            + '\n'.join(f"• {dim}" for dim in state['dimensioni']) +
+            "\n\nSe ti piace come suona, premi \\*Conferma\\* e lasciami fare la magia! ✨"
         )
+
         kb = InlineKeyboardMarkup()
         kb.add(InlineKeyboardButton("💥 CREA 💥", callback_data="crea_finale"))
         bot.send_message(call.message.chat.id, report, reply_markup=kb)
@@ -113,9 +123,21 @@ def handle_crea(call):
         elif tipo == "Cazzo":
             dettaglio = random.choice(DETTAGLI_CAZZO)
     if dettaglio:
-        msg = f"🧾 Risultato casuale:\nTipo: {tipo}\nDimensione: {dimensione}\nDettaglio: {dettaglio}"
+        msg = (
+            f"🧾 Ecco il tuo risultato random, bro:\n"
+            f"• Tipo: {tipo}\n"
+            f"• Dimensione: {dimensione}\n"
+            f"• Dettaglio: {dettaglio}\n\n"
+            "Se vuoi spaccare ancora di più, installa l'app PaddingBro+ e fai /app per tutte le dritte! 🚀🔥"
+        )
     else:
-        msg = f"🧾 Risultato casuale:\nTipo: {tipo}\nDimensione: {dimensione}"
+        msg = (
+            f"🧾 Ecco il tuo risultato random, bro:\n"
+            f"• Tipo: {tipo}\n"
+            f"• Dimensione: {dimensione}\n\n"
+            "Non perdere tempo, installa l'app PaddingBro+ e digita /app per scoprire il next level! 💥🤙"
+        )
+
     bot.send_message(call.message.chat.id, msg)
     bot.delete_message(call.message.chat.id, call.message.message_id)
     user_states.pop(call.from_user.id, None)
