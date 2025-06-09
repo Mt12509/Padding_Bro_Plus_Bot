@@ -35,7 +35,7 @@ Tra poco ti invierò una serie di messaggi con dei menu: scegli gli interessi ch
 Una volta finito, il bot mescolerà tutto e creerà per te un *padding completamente casuale*! ✨
 
 Pronto a vedere cosa ne viene fuori? Let's go! 🚀
-""")
+""", parse_mode='MarkdownV2')
     bot.send_message(chat_id, "❇️ Seleziona i tipi di padding che ti interessano:\n (Scegli Conferma per continuare)", reply_markup=kb)
 
 def send_dimensioni_selection(chat_id, selected):
