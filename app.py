@@ -1,7 +1,7 @@
 from dotenv import load_dotenv
 load_dotenv()
 
-from bot_istance import bot
+from bot_instance import bot
 import create_flow
 
 import os
