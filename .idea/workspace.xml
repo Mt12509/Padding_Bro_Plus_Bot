@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4f19cc7-d6e8-4fbf-b3a2-9fb064addc96" name="Changes" comment="Refactor dotenv loading and update bot instance initialization" />
+    <list default="true" id="c4f19cc7-d6e8-4fbf-b3a2-9fb064addc96" name="Changes" comment="Fix typo in bot instance import and rename file for consistency" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +79,7 @@
       <updated>1749205126919</updated>
       <workItem from="1749205129634" duration="544000" />
       <workItem from="1749205784954" duration="841000" />
-      <workItem from="1749461909694" duration="5612000" />
+      <workItem from="1749461909694" duration="5984000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project files and configuration">
       <option name="closed" value="true" />
@@ -185,7 +185,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749467858311</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Refactor dotenv loading and update bot instance initialization">
+      <option name="closed" value="true" />
+      <created>1749467972184</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1749467972184</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Fix typo in bot instance import and rename file for consistency">
+      <option name="closed" value="true" />
+      <created>1749468128474</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1749468128474</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +218,7 @@
     <MESSAGE value="Add create flow functionality for Telegram bot" />
     <MESSAGE value="Fix import statement formatting and update workspace configuration for create flow functionality" />
     <MESSAGE value="Refactor dotenv loading and update bot instance initialization" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor dotenv loading and update bot instance initialization" />
+    <MESSAGE value="Fix typo in bot instance import and rename file for consistency" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix typo in bot instance import and rename file for consistency" />
   </component>
 </project>

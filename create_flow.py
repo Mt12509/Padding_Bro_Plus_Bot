@@ -1,9 +1,6 @@
 from bot_instance import bot
 
-import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
-
-from app import bot  # importa il bot già configurato
 
 # Stati utente temporanei
 user_states = {}
