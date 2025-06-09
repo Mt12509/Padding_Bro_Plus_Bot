@@ -12,7 +12,7 @@ import telebot
 
 app = flask.Flask(__name__)
 
-bot = telebot.TeleBot(os.environ["BOT_TOKEN"], threaded=False)
+#bot = telebot.TeleBot(os.environ["BOT_TOKEN"], threaded=False)
 
 """ Just a simple check if the app is running """
 
