@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4f19cc7-d6e8-4fbf-b3a2-9fb064addc96" name="Changes" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;vercel.json">
+    <list default="true" id="c4f19cc7-d6e8-4fbf-b3a2-9fb064addc96" name="Changes" comment="Refactor bot to use environment variable for token and add Vercel handler">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +81,7 @@
       <updated>1749205126919</updated>
       <workItem from="1749205129634" duration="544000" />
       <workItem from="1749205784954" duration="841000" />
-      <workItem from="1749461909694" duration="2133000" />
+      <workItem from="1749461909694" duration="2818000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project files and configuration">
       <option name="closed" value="true" />
@@ -115,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749463323353</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Refactor bot to use environment variable for token and add Vercel handler">
+      <option name="closed" value="true" />
+      <created>1749464534158</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749464534158</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +133,7 @@
     <MESSAGE value="Add initial project files and configuration" />
     <MESSAGE value="Add bot handler and configuration files for vercel deploy" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;vercel.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;vercel.json" />
+    <MESSAGE value="Refactor bot to use environment variable for token and add Vercel handler" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor bot to use environment variable for token and add Vercel handler" />
   </component>
 </project>

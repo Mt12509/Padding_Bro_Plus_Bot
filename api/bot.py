@@ -12,7 +12,8 @@ logger = logging.getLogger(__name__)
 
 # Funzione /start
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    await update.message.reply_text("Pronto")
+    if update.message:
+        await update.message.reply_text("Pronto")
 
 # Funzione /help
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
