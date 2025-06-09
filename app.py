@@ -41,7 +41,7 @@ def send_welcome(message):
     "• 💾 *Salvare le tue combo leggendarie* con la funzione esclusiva _SnappThicc_ \\(solo su app\\)\n"
     "• 🚀 *Esplorare nuove combinazioni* ogni volta che vuoi\n\n"
     "ℹ️ Usa il comando /help per vedere tutti i comandi disponibili\n"
-    "Oppure prova subito con /create e lascia fare al destino 💥")
+    "Oppure prova subito con /create e lascia fare al destino 💥", parse_mode="Markdown")
 
 @bot.message_handler(commands=["help"])
 def send_help(message):
@@ -55,7 +55,7 @@ def send_help(message):
     "• /help \\- Stai guardando proprio questo \\! Ti mostra tutti i comandi disponibili 🔍\n\n"
     
     "✨ Altre funzioni stanno arrivando\\. Resta connesso e continua a creare padding leggendari\\. \n"
-    "_PaddingBro\\+ ti guarda\\._ 👀")
+    "_PaddingBro\\+ ti guarda\\._ 👀", parse_mode="Markdown")
 
 if __name__ == "__main__":
     bot.remove_webhook()

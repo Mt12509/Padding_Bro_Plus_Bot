@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4f19cc7-d6e8-4fbf-b3a2-9fb064addc96" name="Changes" comment="Enhance bot interaction with improved message formatting in app info command in create_flow.py">
+    <list default="true" id="c4f19cc7-d6e8-4fbf-b3a2-9fb064addc96" name="Changes" comment="Enhance bot interaction with improved welcome and help messages in app.py">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +93,7 @@
       <updated>1749205126919</updated>
       <workItem from="1749205129634" duration="544000" />
       <workItem from="1749205784954" duration="841000" />
-      <workItem from="1749461909694" duration="13638000" />
+      <workItem from="1749461909694" duration="13936000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project files and configuration">
       <option name="closed" value="true" />
@@ -421,7 +422,6 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add bot handler and configuration files for vercel deploy" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;vercel.json" />
     <MESSAGE value="Refactor bot to use environment variable for token and add Vercel handler" />
     <MESSAGE value="Fix bot response handling to check for message presence" />
@@ -446,6 +446,7 @@
     <MESSAGE value="Enhance bot interaction with additional closing messages and improved formatting in create_flow.py" />
     <MESSAGE value="Enhance bot interaction with new app info command and improved message formatting in create_flow.py" />
     <MESSAGE value="Enhance bot interaction with improved message formatting in app info command in create_flow.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Enhance bot interaction with improved message formatting in app info command in create_flow.py" />
+    <MESSAGE value="Enhance bot interaction with improved welcome and help messages in app.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enhance bot interaction with improved welcome and help messages in app.py" />
   </component>
 </project>
