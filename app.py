@@ -46,17 +46,7 @@ def send_welcome(message):
 @bot.message_handler(commands=["help"])
 def send_help(message):
     bot.reply_to(message,
-    "🛠 *Comandi disponibili su PaddingBro+* \n"
-    "Hai il potere del padding tra le mani\\. Ecco come usarlo al meglio 👇\n\n"
-    
-    "• /start - Mostra il messaggio di benvenuto e panoramica del bot ⏯️\n"
-    "• /create - Avvia la creazione guidata di un padding casuale _(con scelta di tipo e dimensione)_ 🤖\n"
-    "• /app - Scopri l'app ufficiale con funzionalità extra e l'esclusiva *modalità SnappThicc* 💾\n"
-    "• /help - Stai guardando proprio questo! Ti mostra tutti i comandi disponibili 🔍\n\n"
-    "• /about - Scopri di più su PaddingBro+ e il suo creatore 🦸🏻‍♂️\n"
-    
-    "✨ Altre funzioni stanno arrivando. Resta connesso e continua a creare padding leggendari. \n"
-    "_PaddingBro+ ti guarda. 👀", parse_mode="Markdown")
+    "", parse_mode="Markdown")
 
 if __name__ == "__main__":
     bot.remove_webhook()
