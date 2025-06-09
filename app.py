@@ -34,11 +34,11 @@ def webhook():
 @bot.message_handler(commands=["start"])
 def send_welcome(message):
     bot.reply_to(message,
-    "👋 *Benvenuto su PaddingBro+!* Il bot che porta il padding a livelli mai visti 😎\n\n"
+    "👋 *Benvenuto su PaddingBro+!*\nIl bot che porta il padding a livelli mai visti 😎\n\n"
     "Con questo bot puoi:\n"
     "• 🎲 *Creare padding casuali* basati sui tuoi gusti\n"
     "• 📏 *Scegliere tipo e dimensione* con menu interattivi\n"
-    "• 💾 *Salvare le tue combo leggendarie* con la funzione esclusiva *_SnappThicc_* _(solo su app)_\n"
+    "• 💾 *Salvare le tue combo leggendarie* con la funzione esclusiva *SnappThicc* _(solo su app)_\n"
     "• 🚀 *Esplorare nuove combinazioni* ogni volta che vuoi\n\n"
     "ℹ️ Usa il comando /help per vedere tutti i comandi disponibili\n"
     "Oppure prova subito con /create e lascia fare al destino 💥", parse_mode="Markdown")
