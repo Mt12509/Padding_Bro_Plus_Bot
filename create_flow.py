@@ -1,12 +1,14 @@
+import random
 from bot_instance import bot
-
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-# Stati utente temporanei
 user_states = {}
 
-TIPI = ["Tipo1", "Tipo2", "Tipo3"]
-DIMENSIONI = ["Small", "Medium", "Large", "Extra Large"]
+TIPI = ["Grasso", "Muscoli", "Cazzo"]
+DIMENSIONI = ["XL Naturale", "XL Innaturale", "Estremo Innaturale", "Dettaglio Specifico"]
+DETTAGLI_GRASSO = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+DETTAGLI_MUSCOLI = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+DETTAGLI_CAZZO = [",", ".", ":", ";", "!", "?", "(", ")", "[", "]", "{", "}", "<", ">", "/", "\\", "|", "-", "_", "+", "*", "&", "^", "%", "$", "#", "@"]
 
 @bot.message_handler(commands=["create"])
 def start_create(message):
@@ -66,9 +68,10 @@ def handle_dimensioni(call):
             f"Tipi: {', '.join(state['tipi'])}\n"
             f"Dimensioni: {', '.join(state['dimensioni'])}"
         )
-        bot.send_message(call.message.chat.id, report)
+        kb = InlineKeyboardMarkup()
+        kb.add(InlineKeyboardButton("CREA", callback_data="crea_finale"))
+        bot.send_message(call.message.chat.id, report, reply_markup=kb)
         bot.delete_message(call.message.chat.id, call.message.message_id)
-        user_states.pop(call.from_user.id, None)
         return
     dim = call.data.split("_", 1)[1]
     if dim in state["dimensioni"]:
@@ -79,6 +82,29 @@ def handle_dimensioni(call):
             state["dimensioni"].append(dim)
     send_dimensioni_selection(call.message.chat.id, state["dimensioni"])
     bot.delete_message(call.message.chat.id, call.message.message_id)
+
+@bot.callback_query_handler(func=lambda call: call.data == "crea_finale")
+def handle_crea(call):
+    state = user_states.get(call.from_user.id)
+    if not state or state["step"] != "done":
+        return
+    tipo = random.choice(state["tipi"])
+    dimensione = random.choice(state["dimensioni"])
+    dettaglio = None
+    if dimensione == "Dettaglio Specifico":
+        if tipo == "Grasso":
+            dettaglio = random.choice(DETTAGLI_GRASSO)
+        elif tipo == "Muscoli":
+            dettaglio = random.choice(DETTAGLI_MUSCOLI)
+        elif tipo == "Cazzo":
+            dettaglio = random.choice(DETTAGLI_CAZZO)
+    if dettaglio:
+        msg = f"Risultato casuale:\nTipo: {tipo}\nDimensione: {dimensione}\nDettaglio: {dettaglio}"
+    else:
+        msg = f"Risultato casuale:\nTipo: {tipo}\nDimensione: {dimensione}"
+    bot.send_message(call.message.chat.id, msg)
+    bot.delete_message(call.message.chat.id, call.message.message_id)
+    user_states.pop(call.from_user.id, None)
 
 @bot.message_handler(commands=["debug"])
 def debug(message):

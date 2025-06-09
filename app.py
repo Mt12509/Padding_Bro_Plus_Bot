@@ -12,7 +12,6 @@ import telebot
 
 app = flask.Flask(__name__)
 
-#bot = telebot.TeleBot(os.environ["BOT_TOKEN"], threaded=False)
 
 """ Just a simple check if the app is running """
 
@@ -37,14 +36,6 @@ def send_welcome(message):
     bot.reply_to(
         message,
         "Benvenuto! Questo è un bot demo. Usa /help o /start per vedere questo messaggio."
-    )
-
-@bot.message_handler(commands=["create"])
-def start_create(message):
-    print("Handler /create command chiamato")
-    bot.send_message(
-        message.chat.id,
-        "Inizia il processo di creazione. Segui le istruzioni."
     )
 
 if __name__ == "__main__":
