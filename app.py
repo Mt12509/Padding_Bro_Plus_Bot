@@ -1,9 +1,8 @@
 from dotenv import load_dotenv
+load_dotenv()
+
 from bot_instance import bot
 import create_flow
-# ... resto del codice ...
-
-load_dotenv()
 
 import os
 import flask
