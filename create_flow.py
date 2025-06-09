@@ -125,16 +125,16 @@ def handle_crea(call):
     if dettaglio:
         msg = (
             "🧾 Ecco il tuo padding random, bro:\n\n"
-            f"• *Tipo*: ||{tipo}||\n"
-            f"• *Dimensione*: ||{dimensione}||\n"
-            f"• *Dettaglio*: ||{dettaglio}||\n\n"
+            f"• *Tipo*: {tipo}||\n"
+            f"• *Dimensione*: {dimensione}||\n"
+            f"• *Dettaglio*: {dettaglio}||\n\n"
             "Se vuoi spaccare ancora di più, installa l'app PaddingBro+ e fai /app per tutte le dritte! 🚀🔥"
         )
     else:
         msg = (
             "🧾 Ecco il tuo padding random, bro:\n\n"
-            f"• *Tipo*: ||{tipo}||\n"
-            f"• *Dimensione*: ||{dimensione}||\n\n"
+            f"• *Tipo*: {tipo}||\n"
+            f"• *Dimensione*: {dimensione}||\n\n"
             "Non perdere tempo, installa l'app PaddingBro+ e digita /app per scoprire il next level! 💥🤙"
         )
     bot.send_message(call.message.chat.id, msg, parse_mode="Markdown")
