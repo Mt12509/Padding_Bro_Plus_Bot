@@ -157,9 +157,9 @@ def debug(message):
 @bot.message_handler(commands=["app"])
 def app_info(message):
     testo = (
-    "🔥 Vuoi portare il padding al livello successivo\\?\n"
-    "Scarica subito l'app ufficiale *PaddingBro\\+* per funzionalità esclusive e consigli da veri pro 🚀\n\n"
+    "🔥 *Vuoi portare il padding al livello successivo?*\n"
+    "Scarica subito l'app ufficiale *PaddingBro+* per funzionalità esclusive e consigli da veri pro 🚀\n\n"
     "✨ Con la modalità *SnappThicc* puoi anche *salvare le tue creazioni leggendarie* e rivederle quando vuoi 👑\n\n"
-    "[Scarica l'app PaddingBro\\+](https://github.com/Mt12509/Padding_Bro_Plus)"
+    "[Scarica l'app PaddingBro+](https://github.com/Mt12509/Padding_Bro_Plus)"
     )
     bot.send_message(message.chat.id, testo, parse_mode="Markdown", disable_web_page_preview=False)
