@@ -31,12 +31,31 @@ def webhook():
         flask.abort(403)
 
 # Handle '/start' and '/help'
-@bot.message_handler(commands=["help", "start"])
+@bot.message_handler(commands=["start"])
 def send_welcome(message):
-    bot.reply_to(
-        message,
-        "Benvenuto! Questo è un bot demo. Usa /help o /start per vedere questo messaggio.\n "
-    )
+    bot.reply_to(message,
+    "👋 *Benvenuto su PaddingBro\\+\\!* Il bot che porta il padding a livelli mai visti 😎\n\n"
+    "Con questo bot puoi:\n"
+    "• 🎲 *Creare padding casuali* basati sui tuoi gusti\n"
+    "• 📏 *Scegliere tipo e dimensione* con menu interattivi\n"
+    "• 💾 *Salvare le tue combo leggendarie* con la funzione esclusiva _SnappThicc_ \\(solo su app\\)\n"
+    "• 🚀 *Esplorare nuove combinazioni* ogni volta che vuoi\n\n"
+    "ℹ️ Usa il comando /help per vedere tutti i comandi disponibili\n"
+    "Oppure prova subito con /create e lascia fare al destino 💥")
+
+@bot.message_handler(commands=["help"])
+def send_help(message):
+    bot.reply_to(message,
+    "🛠 *Comandi disponibili su PaddingBro\\+* \\n"
+    "Hai il potere del padding tra le mani\\. Ecco come usarlo al meglio 👇\n\n"
+    
+    "• /start \\- Mostra il messaggio di benvenuto e panoramica del bot\n"
+    "• /create \\- Avvia la creazione guidata di un padding casuale \\(con scelta di tipo e dimensione\\)\n"
+    "• /app \\- Scopri l'app ufficiale con funzionalità extra e l'esclusiva *modalità SnappThicc* 💾\n"
+    "• /help \\- Stai guardando proprio questo \\! Ti mostra tutti i comandi disponibili 🔍\n\n"
+    
+    "✨ Altre funzioni stanno arrivando\\. Resta connesso e continua a creare padding leggendari\\. \n"
+    "_PaddingBro\\+ ti guarda\\._ 👀")
 
 if __name__ == "__main__":
     bot.remove_webhook()
