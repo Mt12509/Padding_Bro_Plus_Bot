@@ -1,4 +1,6 @@
-from dotenv import load_dotenv
+from dotenv import load_dotenvfrom bot_instance import bot
+import create_flow
+# ... resto del codice ...
 
 load_dotenv()
 
@@ -6,7 +8,6 @@ import os
 import flask
 import telebot
 
-import create_flow
 
 app = flask.Flask(__name__)
 
