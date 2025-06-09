@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4f19cc7-d6e8-4fbf-b3a2-9fb064addc96" name="Changes" comment="Improve bot responses for unrecognized commands and update about message formatting" />
+    <list default="true" id="c4f19cc7-d6e8-4fbf-b3a2-9fb064addc96" name="Changes" comment="Update bot response for specific detail dimension and modify workspace comment">
+      <change beforePath="$PROJECT_DIR$/create_flow.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_flow.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,15 +92,7 @@
       <updated>1749205126919</updated>
       <workItem from="1749205129634" duration="544000" />
       <workItem from="1749205784954" duration="841000" />
-      <workItem from="1749461909694" duration="16460000" />
-    </task>
-    <task id="LOCAL-00005" summary="Refactor bot to use environment variable for token and add Vercel handler">
-      <option name="closed" value="true" />
-      <created>1749464534158</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1749464534158</updated>
+      <workItem from="1749461909694" duration="16873000" />
     </task>
     <task id="LOCAL-00006" summary="Fix bot response handling to check for message presence">
       <option name="closed" value="true" />
@@ -484,14 +478,21 @@
       <option name="project" value="LOCAL" />
       <updated>1749480808642</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Update bot response for specific detail dimension and modify workspace comment">
+      <option name="closed" value="true" />
+      <created>1749481066622</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1749481066622</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update bot token environment variable in Flask app" />
     <MESSAGE value="Add create flow functionality for Telegram bot" />
     <MESSAGE value="Fix import statement formatting and update workspace configuration for create flow functionality" />
     <MESSAGE value="Refactor dotenv loading and update bot instance initialization" />
@@ -516,6 +517,7 @@
     <MESSAGE value="Enhance help message content in bot interaction for improved user guidance in app.py" />
     <MESSAGE value="Add about command to provide information about PaddingBro+ and support options" />
     <MESSAGE value="Improve bot responses for unrecognized commands and update about message formatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improve bot responses for unrecognized commands and update about message formatting" />
+    <MESSAGE value="Update bot response for specific detail dimension and modify workspace comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update bot response for specific detail dimension and modify workspace comment" />
   </component>
 </project>

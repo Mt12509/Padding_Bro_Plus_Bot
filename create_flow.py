@@ -119,12 +119,12 @@ def handle_crea(call):
     # Estrai il nome base del tipo (prima dello spazio)
     tipo_base = tipo.split()[0]
 
-    if dimensione == "Dettaglio":
-        if tipo == "Grasso":
+    if dimensione == "Dettaglio Specifico 🔁":
+        if tipo_base == "Grasso":
             dettaglio = random.choice(DETTAGLI_GRASSO)
-        elif tipo == "Muscoli":
+        elif tipo_base == "Muscoli":
             dettaglio = random.choice(DETTAGLI_MUSCOLI)
-        elif tipo == "Cazzo":
+        elif tipo_base == "Cazzo":
             dettaglio = random.choice(DETTAGLI_CAZZO)
     if dettaglio:
         msg = (
